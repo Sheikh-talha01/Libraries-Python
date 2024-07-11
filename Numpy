@@ -1,2 +1,12 @@
 # This repo includes code related to Numpy library
 # Numpy is short form of Numerical Python
+
+import numpy as np
+
+np.array() this function will create an array(space separated) of list( comma separated
+
+arr = np.array([3,5,4,7,8])
+print(arr)
+
+print(type(arr))
+Output ->      <class 'numpy.ndarray'>
