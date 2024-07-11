@@ -17,12 +17,40 @@ print(type(arr))
 arr2 = np.array( [ [ 22,33,44,55 ] , [ 66, 77, 88, 99 ] , [ 32, 43, 54,65 ] ] )
 print(arr2)
 # Output-> [[22 33 44 55]
-         [66 77 88 99]
-         [32 43 54 65]]
+           [66 77 88 99]
+           [32 43 54 65]]
 
 # for multiple dimension array all the lists have same No of values( because in matrices every row have same No of columns )
 # in the main list otherwise will throw an error .We can extend the dimensions of array by adding comma and then by adding list 
 # having same No of values as others
 
-# Slicing in Numpy¶
+# Slicing in Numpy
+
 # Slicing in One dimensional array
+
+arr3 = np.array( [ 2,4,6,8,7,5,3,1 ] )
+print ( arr3[ 0: 4 ] ) 
+# Output-> [2 4 6 8]
+
+print( arr3 [ : 4 ] )
+print ( arr3 [ 0 : ] )
+# Output-> [2 4 6 8]
+           [2 4 6 8 7 5 3 1]
+
+print ( arr3 [ -1 : ] )
+# Output-> [1]
+
+print ( arr3 [ -4 : -1 ])
+# Output-> [7 5 3]
+
+print ( arr3 [-4 : ] )
+print ( arr3 [ : -1 ] )
+# Output-> [7 5 3 1]
+           [2 4 6 8 7 5 3]
+
+# Slicing in Multi Dimensional array
+
+arr4 = np.array( [ [ 1,3,5,7,9] , [ 0,2,4,6,8 ] ] )
+print( arr4 [ 0:2 , 0:3 ] ) 
+# Output-> [[1 3 5]
+           [0 2 4]]
