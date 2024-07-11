@@ -64,4 +64,4 @@ print ( arr4 [ 0 ] )
 # Output->   [1 3 5 7 9]
 
 print ( arr4 [ 1, 1:3 ] )
-#Output-> [2 4]
+# Output-> [2 4]
