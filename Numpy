@@ -3,10 +3,26 @@
 
 import numpy as np
 
-np.array() this function will create an array(space separated) of list( comma separated
+# np.array() this function will create an array(space separated) of list( comma separated
 
 arr = np.array([3,5,4,7,8])
 print(arr)
+# Output->       [3 5 4 7 8]
 
 print(type(arr))
-Output ->      <class 'numpy.ndarray'>
+# Output ->      <class 'numpy.ndarray'>
+
+# for multiple dimendion array like matrices
+
+arr2 = np.array( [ [ 22,33,44,55 ] , [ 66, 77, 88, 99 ] , [ 32, 43, 54,65 ] ] )
+print(arr2)
+# Output-> [[22 33 44 55]
+         [66 77 88 99]
+         [32 43 54 65]]
+
+# for multiple dimension array all the lists have same No of values( because in matrices every row have same No of columns )
+# in the main list otherwise will throw an error .We can extend the dimensions of array by adding comma and then by adding list 
+# having same No of values as others
+
+# Slicing in Numpy¶
+# Slicing in One dimensional array
