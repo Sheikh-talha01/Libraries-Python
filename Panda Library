@@ -1,0 +1,57 @@
+# this repo includes all the code related to Pandas library in Python
+
+import numpy as np
+import pandas as pd
+dict1 = {
+    "Name" : ["Talha" , "Sheikh" , "Ali" , "Fahad" , " Saleem"] , 
+    "Age" : [20, 21 , 22, 19 , 7] ,
+    "City" : ["Mansehra", "Karachi" , "Lahore" , "Qalandarabad" , "Abbottabad" ] , 
+    "Marks" : [99, 88, 45, 76 , 67 ]
+}
+
+# DataFrame() function will convert simple data to datasheet
+# DataFrame must be in camel format
+df = pd.DataFrame(dict1)
+df
+
+# csv  stands for comma separated values
+# csv files is sheet of comma sepated values 
+
+# import data to MS Excel datasheet
+# to_csv('filename.extension') function will be used 
+df.to_csv('friends.csv')
+
+# if we don't want first column then
+df.to_csv('friends_index_false.csv' , index = False) 
+# F in False must be capital in python
+# first column (serial No ) will be accessed by index = True
+
+# we can access values of any column by column name and can access row by index number
+
+
+# wanna see starting two rows then  .head()  function is used
+# Often used when data is too large like more than 100 rows and then we wanna see starting some rows
+df.head(2)
+
+# Wanna see ending rows of given dataset then .tail()  function is used
+df.tail(2)
+
+# to read data from csv sheet then
+# pd.read_csv('filename.csv')
+# Example
+b = pd.read_csv('sheikh_.csv')
+b = pd.read_csv('sheikh_.csv')
+
+# for statistical analysis of columns having numerical values then .describe()  function is used
+b.describe()
+
+# # to access specific column e.g marks
+b['marks']
+
+# To access specific value from specific column
+b['marks'][0]
+
+# To change specific value or overwrite
+b['marks'][0] = 3
+
+b
