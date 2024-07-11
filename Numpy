@@ -25,7 +25,7 @@ print(arr2)
 # having same No of values as others
 
 # Slicing in Numpy
-
+   
 # Slicing in One dimensional array
 
 arr3 = np.array( [ 2,4,6,8,7,5,3,1 ] )
@@ -54,3 +54,14 @@ arr4 = np.array( [ [ 1,3,5,7,9] , [ 0,2,4,6,8 ] ] )
 print( arr4 [ 0:2 , 0:3 ] ) 
 # Output-> [[1 3 5]
            [0 2 4]]
+
+# Wanna access a single element form multidimensional array
+
+print ( arr4 [ 0, 1:3 ] )
+# Output->    [3 5]
+
+print ( arr4 [ 0 ] )
+# Output->   [1 3 5 7 9]
+
+print ( arr4 [ 1, 1:3 ] )
+#Output-> [2 4]
