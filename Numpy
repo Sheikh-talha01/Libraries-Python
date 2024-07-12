@@ -153,4 +153,19 @@ arr7 = np.array( [ 1,2,3,4,5] )
 print( np.sqrt( arr7 ) )
 # Output->     [1.         1.41421356 1.73205081 2.         2.23606798]
 
+# Combining and Spliting Arrays
+
+# Concatenation without using numpy library
+first = [ 2 , 3, 4, 5]
+second = [ 6, 7, 8, 9]
+print( first +  second)
+# Output->     [2, 3, 4, 5, 6, 7, 8, 9]
+
+# Concatenation  using numpy library
+arr7 = np.array( [ 1,2,3,4,5] )
+arr8 = np.array ( [ 2,2,2,2,2] )
+# Output->     print( np.concatenate( [arr7, arr8] ))
+
+
+[1 2 3 4 5 2 2 2 2 2]
 
