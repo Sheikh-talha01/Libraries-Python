@@ -162,21 +162,37 @@ print( first +  second)
 # Output->     [2, 3, 4, 5, 6, 7, 8, 9]
 
 # Concatenation  using numpy library
+
+# Concatenation in one dimension using numpy library
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 2,2,2,2,2] )
 print( np.concatenate( [arr7, arr8] ))
 # Output->     [1 2 3 4 5 2 2 2 2 2]
 
-# Concatenation in one dimension using numpy library
+# Concatenation in two dimension using numpy library
+
+# Horizontal Concatenation when axis = 1
 arr7 = np.array([ [ 1,2,9], [3,4,5] ] )
 arr8 = np.array ( [ [ 2,3,4], [1,0,2] ] )
 print( np.concatenate( [arr7, arr8], axis = 1 ))
 # Output->     [[1 2 9 2 3 4]
                [3 4 5 1 0 2]]
 
+# Horizontal Concatenation using hstack
+print(np.hstack ( [arr7, arr8 ]))
+# Output->     [[1 2 9 2 3 4]
+               [3 4 5 1 0 2]]
+
+# Vertical Concatenation when axis = 0
 print( np.concatenate( [arr7, arr8], axis = 0 ))
-# Output->     [[1 2 9]
+# Output->      [[1 2 9]
                 [3 4 5]
                 [2 3 4]
                 [1 0 2]]
 
+# Vertical Concatenation using vstack
+print(np.vstack ( [arr7, arr8 ]))
+# Output->       [[1 2 9]
+                 [3 4 5]
+                 [2 3 4]
+                 [1 0 2]]
