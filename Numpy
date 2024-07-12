@@ -78,6 +78,7 @@ arr6 = np.array ( [ [ 2,3,4] , [5,6,7] ] )
 print(arr6.size)
 # Output-> 6
 
+# To check No of nested elements 
 arr5 = np.array( [2,3,4] )
 print(len(arr5))
 # Output-> 3
@@ -105,3 +106,44 @@ print( arr5.astype(str))
 print( arr6.shape)
 # Output->    (2, 3)
 
+# Mathematical Operations and Functions on array
+
+# Addition for one dimensional array
+arr7 = np.array( [ 1,2,3,4,5] )
+arr8 = np.array ( [ 6,7,8,9,5] )
+print( arr7 + arr8 )
+print( np.add(arr7, arr8 ) )
+# Output-> [ 7  9 11 13 10]
+# Output-> [ 7  9 11 13 10]
+
+# Addition for multi dimensional array
+
+#Subtraction
+arr7 = np.array( [ 1,2,3,4,5] )
+arr8 = np.array ( [ 6,7,8,9,5] )
+print( arr8 - arr7 )
+print ( np.subtract(arr8, arr7))
+# Output->       [5 5 5 5 0]
+# Output->       [5 5 5 5 0]
+
+# Multiply
+arr7 = np.array( [ 1,2,3,4,5] )
+arr8 = np.array ( [ 2,2,2,2,2] )
+print( arr8 * arr7 )
+print ( np.multiply(arr8, arr7))
+# Output->       [ 2  4  6  8 10]
+# Output->       [ 2  4  6  8 10]
+
+# Divide
+arr7 = np.array( [ 1,2,3,4,5] )
+arr8 = np.array ( [ 2,2,2,2,2] )
+print( arr8 / arr7 )
+print ( np.divide(arr8, arr7))
+# Output->     [2.         1.         0.66666667 0.5        0.4       ]
+# Output->     [2.         1.         0.66666667 0.5        0.4       ]
+
+# Power
+arr9 = np.array([2])
+arr7 = np.array( [ 1,2,3,4,5] ) 
+print( np.power( arr7, arr9 ) )
+# Output->     [ 1  4  9 16 25]
