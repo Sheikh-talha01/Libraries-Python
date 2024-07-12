@@ -164,8 +164,19 @@ print( first +  second)
 # Concatenation  using numpy library
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 2,2,2,2,2] )
-# Output->     print( np.concatenate( [arr7, arr8] ))
+print( np.concatenate( [arr7, arr8] ))
+# Output->     [1 2 3 4 5 2 2 2 2 2]
 
+# Concatenation in one dimension using numpy library
+arr7 = np.array([ [ 1,2,9], [3,4,5] ] )
+arr8 = np.array ( [ [ 2,3,4], [1,0,2] ] )
+print( np.concatenate( [arr7, arr8], axis = 1 ))
+# Output->     [[1 2 9 2 3 4]
+               [3 4 5 1 0 2]]
 
-[1 2 3 4 5 2 2 2 2 2]
+print( np.concatenate( [arr7, arr8], axis = 0 ))
+# Output->     [[1 2 9]
+                [3 4 5]
+                [2 3 4]
+                [1 0 2]]
 
