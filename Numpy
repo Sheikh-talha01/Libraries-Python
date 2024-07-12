@@ -95,10 +95,13 @@ print ( arr5.dtype)
 # Output->    int64
 
 # To change datatype in array
+# But string datatype can not be converted into int or float 
 print( arr5.astype(float))
 print( arr5.astype(str))
 # Output->    [2.0 3.0 4.0]
 # Output->    ['2' '3' '4']
 
-
+# To check No of columns and rows .shape() function will be used
+print( arr6.shape)
+# Output->    (2, 3)
 
