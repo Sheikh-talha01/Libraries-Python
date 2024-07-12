@@ -93,3 +93,12 @@ print( type(arr5))
 # To check type of datatype used in array
 print ( arr5.dtype)
 # Output->    int64
+
+# To change datatype in array
+print( arr5.astype(float))
+print( arr5.astype(str))
+# Output->    [2.0 3.0 4.0]
+# Output->    ['2' '3' '4']
+
+
+
