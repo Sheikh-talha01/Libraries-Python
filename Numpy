@@ -315,6 +315,8 @@ print( d_ )
 print ( d_[ 1 ].sum() )
 # Output->        540
 
+# Median is central value after sorting
+
 _b = np.array( [ 25,37, 44, 59 ] )
 print( np.mean ( _b ) ) # Sum of all the values / divided by total No of values
 print( np.median ( _b ) )  # first sort the given data and then average of middle values
@@ -322,4 +324,28 @@ print( np.median ( _b ) )  # first sort the given data and then average of middl
 # for median if total No of values are even then after sorting take average of center two values
 # Output->        41.25
 # Output->        40.5
+
+# There is no function in Numpy library for finding mode
+
+# Statistics Library
+# For finding mode there is function in statistics library
+
+import statistics as stats
+_c = np.array( [ 25,37, 59, 44, 59 ] )
+print ( stats.mode ( _c ) )
+# Output->        59
+
+# Standard Diviation
+_c = np.array( [ 25,37, 59, 44, 59 ] )
+print ( np.std (_c ) )
+# Output->       13.090454537562858
+
+# Variance
+print( np.var ( _c ) )171.36z
+# Output->       171.36
+
+# To verify var and std function 
+print ( 13.09**2 )
+
+# Output->       171.3481
 
