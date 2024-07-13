@@ -272,3 +272,27 @@ g = b % 2 == 0
 h = b[g]
 print(h)
 # Output->        [20 30 40 50]
+
+# Statistical Functions in array
+
+b = np.array( [ 20,30, 40, 50 ] )
+print( np.sum ( b) )
+# Output->        140
+
+print( np.cumsum (b) )
+# Output->        [ 20  50  90 140]
+
+print( np.cumprod (b) )
+# Output->        [     20     600   24000 1200000]
+
+print( np.max (b) )
+# Output->        50
+
+print( np.min (b) )
+# Output->        20
+
+print( np.size (b) )
+# Output->        4
+
+print( np.mean (b) )
+# Output->        35.0
