@@ -346,6 +346,20 @@ print( np.var ( _c ) )171.36z
 
 # To verify var and std function 
 print ( 13.09**2 )
-
 # Output->       171.3481
 
+# Cofficient of Corelation
+# -1 represents inversely proportional relationship
+# +1 represents directly proportional relationship
+# zero represents no relation i-e both quantities are independent of each other
+x = [ 100, 200, 300, 400, 500, 600 ]
+y = [ 9, 7, 5, 3, 2, 1]
+z = [ 2 , 4, 6, 7, 8, 9 ]
+print ( np.corrcoef( [ x,y ] ) )
+print()
+print ( np.corrcoef ( [ x , z ] ) )
+# Output->       [[ 1.         -0.98850537]
+                 [-0.98850537  1.        ]]
+# Output->       
+# Output->       [[1.         0.98390407]
+                 [0.98390407 1.        ]]
