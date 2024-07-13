@@ -247,3 +247,28 @@ arr_5 = np.array( [ 9,3,8,2,1 ] )
 b = np.where ( arr_5 % 2 == 0 )
 print(b)
 # Output->       (array([2, 3]),)
+
+# np.searchsorted() function, for this array must be sorted first
+arr_6 = np.array ( [ 1,2,3,4,5 ] )
+print(np.searchsorted (arr_6, 2) )
+# Output->        1
+
+# Filter
+
+b = np.array( [ 20,30, 40, 50 ] )
+c = [ True, False, True, False ]
+d = b[c]
+print( d )
+# Output->        [20 40]
+
+b = np.array( [ 20,30, 40, 50 ] )
+e = b > 35
+f = b [ e ]
+print(f)
+# Output->        [40 50]
+
+b = np.array( [ 20,30, 40, 50 ] )
+g = b % 2 == 0
+h = b[g]
+print(h)
+# Output->        [20 30 40 50]
