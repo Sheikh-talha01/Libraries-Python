@@ -315,3 +315,11 @@ print( d_ )
 print ( d_[ 1 ].sum() )
 # Output->        540
 
+_b = np.array( [ 25,37, 44, 59 ] )
+print( np.mean ( _b ) ) # Sum of all the values / divided by total No of values
+print( np.median ( _b ) )  # first sort the given data and then average of middle values
+# for median if total No of values are odd then after sorting center value will be median
+# for median if total No of values are even then after sorting take average of center two values
+# Output->        41.25
+# Output->        40.5
+
