@@ -11,18 +11,37 @@ dict1 = {
 
 # DataFrame() function will convert simple data to datasheet
 # DataFrame must be in camel format
-df = pd.DataFrame(dict1)
-df
+a = pd.DataFrame(dict1)
+a
+# Output->   
+	Name	Age	  City	       Marks
+0	Talha	20	 Mansehra	    99
+1	Sheikh	21	 Karachi	    88
+2	Ali	    22	 Lahore	        45
+3	Fahad	19	 Qalandarabad   76
+4	Saleem	7	 Abbottabad	    67
 
 # csv  stands for comma separated values
 # csv files is sheet of comma sepated values 
 
 # import data to MS Excel datasheet
 # to_csv('filename.extension') function will be used 
-df.to_csv('friends.csv')
+a.to_csv('friends.csv')
 
 # if we don't want first column then
-df.to_csv('friends_index_false.csv' , index = False) 
+a.to_csv('friends_index_false.csv' , index = False) 
+# Output-> 
+	Name	 Age	    City	     Marks
+0	Talha	 20	    Mansehra	 99
+1	Sheikh	 21	    Karachi	     88
+
+a.head(3)
+# Output-> 
+    Name	 Age 	City	     Marks
+0	Talha	 20	    Mansehra	 99
+1	Sheikh	 21	    Karachi  	 88
+2	Ali	     22	    Lahore  	 45
+
 # F in False must be capital in python
 # first column (serial No ) will be accessed by index = True
 
@@ -37,10 +56,13 @@ df.head(2)
 df.tail(2)
 
 # to read data from csv sheet then
-# pd.read_csv('filename.csv')
+# pd.read_csv('filename.csv') when file is in the same folder 
+# pd.read_csv('file_path.csv') when file is not in the same folder then we have to give complete file path and change backward salshes into forward slashes
 # Example
 b = pd.read_csv('sheikh_.csv')
-b = pd.read_csv('sheikh_.csv')
+
+
+# to read data / import excel file then we have to import openpyxl library
 
 # for statistical analysis of columns having numerical values then .describe()  function is used
 b.describe()
