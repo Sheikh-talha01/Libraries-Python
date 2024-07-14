@@ -153,3 +153,36 @@ None
 
 # For statistical analysis of data a.describe() function will be used
 # For getting general info about data a.info() function will be used
+
+# To check null values in every column
+print( d.isnull().sum() )
+# Output-> 
+age           2
+marks         2
+Unnamed: 2    9
+dtype: int64
+
+# To check duplicate values
+print( d["age"].duplicated().sum() )
+# Output->      1
+
+# Duplicate function will use when we are dealing with duplicate values and wanna find it then we will find it from a unique column/serial No/ RollNo
+print( d.duplicated().sum() )
+# Output->    
+1
+
+# For drop duplicate values drop_duplicates("column_name") function will be used
+print(d.drop_duplicates( "age" ) )
+# Output->
+  age  marks
+0   23     99
+1   32     88
+2   34     89
+3   33     98
+4   43     78
+5   45      8
+6   65     87
+
+
+
+
