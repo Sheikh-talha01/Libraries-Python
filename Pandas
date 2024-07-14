@@ -60,6 +60,8 @@ df.tail(2)
 3	Fahad	19	Qalandarabad	76
 4	Saleem	7	Abbottabad	67
 
+# By default pd.tail() and pd.head() function takes 5 as an argument
+
 # to read data from csv sheet then
 # pd.read_csv('filename.csv') when file is in the same folder 
 # pd.read_csv('file_path.csv') when file is not in the same folder then we have to give complete file path and change backward salshes into forward slashes
@@ -133,3 +135,21 @@ sixth	45.0	8.0	NaN
 seventh	65.0	87.0	NaN
 eight	NaN	NaN	NaN
 ningth	NaN	NaN	NaN
+
+# To get info about data
+print(d.info() )
+# Output-> 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 9 entries, 0 to 8
+Data columns (total 3 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   age         7 non-null      float64
+ 1   marks       7 non-null      float64
+ 2   Unnamed: 2  0 non-null      float64
+dtypes: float64(3)
+memory usage: 348.0 bytes
+None
+
+# For statistical analysis of data a.describe() function will be used
+# For getting general info about data a.info() function will be used
