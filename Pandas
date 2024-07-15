@@ -183,6 +183,23 @@ print(d.drop_duplicates( "age" ) )
 5   45      8
 6   65     87
 
+# When working with large data then .dropna() function will be used But we have to know that 
+# in every scenario we are not supposed to use this function e.g in a company while dealing with 
+# duplicate data, if we use this function then this will remove some data at the end we are required
+# count the total employee then there will be ambiguity in results.
+print( d.dropna())
+# Output-> 
+   age  marks
+0   23     99
+1   32     88
+2   34     89
+3   33     98
+4   43     78
+5   45      8
+6   65     87
+7   43      2
+
+
 
 
 
