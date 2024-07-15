@@ -236,4 +236,42 @@ print ( f )
 5       Faiz      Umar   45      8
 6       Riaz     Usman   65     87
 
+# Combining two columns
+f["Full Name"] = f["First Name"] +" " + f[ "Last Name" ]
+print ( f )
+# Output->  
+     First Name   Last Name  age   marks      Full Name
+0      Talha       Sheikh     23     99     Talha Sheikh
+1      Azeem       Azam       32     88     Azeem Azam
+2      Saleem      Shokat     34     89     Saleem Shokat
+3      Kaleem      Faheem     33     98     Kaleem Faheem
+4      Shakeel     Niaz       43     78     Shakeel Niaz
+5      Faiz        Umar       45      8     Faiz Umar
+6      Riaz        Usman      65     87     Riaz Usman
+
+f["Full Name"] = f["First Name"].str.capitalize() +" " + f[ "Last Name" ].str.capitalize()
+print ( f )
+# Output->
+    First Name    Last Name  age  marks      Full Name
+0      Talha      Sheikh     23     99     Talha Sheikh
+1      Azeem      Azam       32     88     Azeem Azam
+2      Saleem     Shokat     34     89     Saleem Shokat
+3      Kaleem     Faheem     33     98     Kaleem Faheem
+4      Shakeel    Niaz       43     78     Shakeel Niaz
+5      Faiz       Umar       45      8     Faiz Umar
+
+f["Percentage"] = f["marks"]/100
+print(f)
+# Output->
+  First Name Last Name  age  marks      Full Name  Percentage
+0      Talha    Sheikh   23     99   Talha Sheikh        0.99
+1      Azeem      Azam   32     88     Azeem Azam        0.88
+2     Saleem    Shokat   34     89  Saleem Shokat        0.89
+3     Kaleem    Faheem   33     98  Kaleem Faheem        0.98
+4    Shakeel      Niaz   43     78   Shakeel Niaz        0.78
+5       Faiz      Umar   45      8      Faiz Umar        0.08
+6       Riaz     Usman   65     87     Riaz Usman        0.87
+6       Riaz     Usman   65     87     Riaz Usman
+
+
 
