@@ -271,7 +271,17 @@ print(f)
 4    Shakeel      Niaz   43     78   Shakeel Niaz        0.78
 5       Faiz      Umar   45      8      Faiz Umar        0.08
 6       Riaz     Usman   65     87     Riaz Usman        0.87
-6       Riaz     Usman   65     87     Riaz Usman
 
 
+h = { " Months" : 
+    [ "January", "Febuary", "March", "April",
+     "May", "June", "July", "August", "September", 
+     "October", "November ", "December" ]  }
+_h = pd.DataFrame(h)
+print (_h)
+def extract(value):
+    return value[0:3]
+_h["Short Months" ] = _h["Months"].map(extract)
+print(_h)
 
+# Output->
