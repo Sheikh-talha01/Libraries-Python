@@ -215,6 +215,11 @@ print(d["age"].mean() )
 # Output->    39.75
 print( d["age"].replace( np.nan, 39.75 ) )
 
+# Best approch to replace data of string type is using backward fill or forward fill method
+print( a.fillna( method = "bfill" ) )    # bfill is backward fill
+# OR print( a.fillna( method = "ffill" ) )   # ffill is forward fill  
+
+
 
 
 
