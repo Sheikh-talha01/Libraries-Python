@@ -224,4 +224,16 @@ d.loc[ ( d  ["age %" ] == 0), "new_age"  ]= 18
 d.loc[ ( d  ["age %" ] > 0), "new_age"  ]= 19 
 
 
+f = pd.read_excel ('sheikh.xlsx' )
+print ( f )
+# Output->    
+  First Name Last Name  age  marks
+0      Talha    Sheikh   23     99
+1      Azeem      Azam   32     88
+2     Saleem    Shokat   34     89
+3     Kaleem    Faheem   33     98
+4    Shakeel      Niaz   43     78
+5       Faiz      Umar   45      8
+6       Riaz     Usman   65     87
+
 
