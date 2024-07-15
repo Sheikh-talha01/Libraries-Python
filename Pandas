@@ -219,7 +219,9 @@ print( d["age"].replace( np.nan, 39.75 ) )
 print( a.fillna( method = "bfill" ) )    # bfill is backward fill
 # OR print( a.fillna( method = "ffill" ) )   # ffill is forward fill  
 
-
+# Column Transformation in Pandas
+d.loc[ ( d  ["age %" ] == 0), "new_age"  ]= 18 
+d.loc[ ( d  ["age %" ] > 0), "new_age"  ]= 19 
 
 
 
