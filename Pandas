@@ -405,3 +405,57 @@ print(pd.merge(d1,d2) )
 7  e8    7600    Qadir   23
 8  e9    3980     Saad   76
 
+# Merge data ( merge data from different data sets )
+print(pd.merge(d1,d2) )
+# OR
+print()
+print(pd.merge(d1,d2, on = "EID") )
+# We merge data in this mannaer only when there is no nan value or there are equal Number of values in both datasets
+# Output->
+  EID  Salary     Name  Age
+0  e1    9000   Sheikh   18
+1  e2    8000   Saleem   20
+2  e3    7000   Kaleem   29
+3  e4    9900   Hafeez   50
+4  e5    3900    Ibrar   43
+5  e6    5600    Qasim   39
+6  e7    2549    Jabar   68
+7  e8    7600    Qadir   23
+8  e9    3980     Saad   76
+
+  EID  Salary     Name  Age
+0  e1    9000   Sheikh   18
+1  e2    8000   Saleem   20
+2  e3    7000   Kaleem   29
+3  e4    9900   Hafeez   50
+4  e5    3900    Ibrar   43
+5  e6    5600    Qasim   39
+6  e7    2549    Jabar   68
+7  e8    7600    Qadir   23
+8  e9    3980     Saad   76
+
+data1 = { 
+    "EID" : [ "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8" , "e9"],
+    "Salary" : [9000, 8000, 7000, 9900, 3900, 5600, 2549, 7600, 3980],
+    "Name" : [ " Sheikh" , "Saleem" , "Kaleem", "Hafeez", " Ibrar", "Qasim" , "Jabar", "Qadir", "Saad" ] }
+data3 = {
+    "EID" : [ "e11", "e22", "e3", "e4", "e5", "e6", "e77", "e8" , "e9"],
+    "Age" : [ 18, 20, 29, 50, 43, 39, 68, 23, 76] }
+d1 = pd.DataFrame(data1)
+d3 = pd.DataFrame(data3)
+
+# there are different values in employee id column(EID) of both sets, So if we try to merge data in simple way ( on ) then 
+# then We will get only  6 indices out of 9 bcz in 3 record are different from each datasets ( having no common a
+print( pd.merge( d1,d3) )
+# Or
+print( pd.merge ( d1,d3 , on = "EID" , how = "inner" ) )
+# Both have same meaning/ same output
+# Output->
+  EID  Salary    Name  Age
+0  e3    7000  Kaleem   29
+1  e4    9900  Hafeez   50
+2  e5    3900   Ibrar   43
+3  e6    5600   Qasim   39
+4  e8    7600   Qadir   23
+5  e9    3980    Saad   76
+
