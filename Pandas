@@ -565,7 +565,7 @@ print( d5, "\n", d8 )
 3  e4   50
 4  e5   49
 
-print ( d5.compare(d8 ) )
+print ( d5.compare(d8 ) )  # By defalut axis = 1
 # Output-> 
    Age      
   self other
@@ -574,3 +574,19 @@ print ( d5.compare(d8 ) )
 2   26    29
 3   70    50
 4   10    49
+
+print ( d5.compare(d8 ,align_axis = 0 )) 
+# When axis = 0, it will return initial value and final value both
+# Output-> 
+         Age
+0 self    23
+  other   18
+1 self    52
+  other   20
+2 self    26
+  other   29
+3 self    70
+  other   50
+4 self    10
+  other   49
+
