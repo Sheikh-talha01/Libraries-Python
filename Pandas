@@ -498,3 +498,27 @@ print( pd.merge ( left = d1, right = d3 , on = "EID" , how = "right" ) )
 6  e77     NaN     NaN   68
 7   e8  7600.0   Qadir   23
 8   e9  3980.0    Saad   76
+
+# Concatenate two datasets
+data5 = { 
+    "EID" : [ "e1", "e2", "e3", "e4", "e5"],
+    "Age" : [23,52,26,70,10]}
+data4 = {
+    "EID" : [ "e6", "e7", "e8", "e9"],
+    "Age" : [ 18, 20, 29, 50] }
+d5 = pd.DataFrame(data5)
+d4 = pd.DataFrame(data4)
+print( pd.concat ( [d5,d4] ) )
+# Output-> 
+  EID  Age
+0  e1   23
+1  e2   52
+2  e3   26
+3  e4   70
+4  e5   10
+0  e6   18
+1  e7   20
+2  e8   29
+
+
+3  e9   50
