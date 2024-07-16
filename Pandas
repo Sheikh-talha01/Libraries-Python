@@ -519,6 +519,58 @@ print( pd.concat ( [d5,d4] ) )
 0  e6   18
 1  e7   20
 2  e8   29
-
-
 3  e9   50
+
+print( d4 )
+# Output-> 
+  EID  Age
+0  e6   18
+1  e7   20
+2  e8   29
+3  e9   50
+
+# Copy data in new dataset from existing dataset
+d6 = d4.copy()
+d6.loc[0, "EID"] =  "e9"
+d6.loc[0,"Age" ] = 29
+print ( d6 )
+# Output-> 
+  EID  Age
+0  e9   29
+1  e7   20
+2  e8   29
+3  e9   50
+
+ Compare data of two datasets
+data5 = { 
+    "EID" : [ "e1", "e2", "e3", "e4", "e5"],
+    "Age" : [23,52,26,70,10]}
+data8 = {
+    "EID" : [ "e1", "e2", "e3", "e4", "e5"],
+    "Age" : [ 18, 20, 29, 50, 49] }
+d5 = pd.DataFrame(data5)
+d8 = pd.DataFrame(data8)
+print( d5, "\n", d8 )
+# Output-> 
+  EID  Age
+0  e1   23
+1  e2   52
+2  e3   26
+3  e4   70
+4  e5   10 
+   EID  Age
+0  e1   18
+1  e2   20
+2  e3   29
+3  e4   50
+4  e5   49
+
+print ( d5.compare(d8 ) )
+# Output-> 
+   Age      
+  self other
+0   23    18
+1   52    20
+2   26    29
+3   70    50
+4   10    49
