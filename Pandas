@@ -357,3 +357,51 @@ male    India         34     98
         Pakistan      45     99
         Srilanka      43     78
 
+
+data1 = { 
+    "EID" : [ "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8" , "e9"],
+    "Salary" : [9000, 8000, 7000, 9900, 3900, 5600, 2549, 7600, 3980],
+    "Name" : [ " Sheikh" , "Saleem" , "Kaleem", "Hafeez", " Ibrar", "Qasim" , "Jabar", "Qadir", "Saad" ] }
+data2 = {
+    "EID" : [ "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8" , "e9"],
+    "Age" : [ 18, 20, 29, 50, 43, 39, 68, 23, 76] }
+d1 = pd.DataFrame(data1)
+d2 = pd.DataFrame(data2)
+print( d1, "\n\n", d2 )
+# Output->
+  EID  Salary     Name
+0  e1    9000   Sheikh
+1  e2    8000   Saleem
+2  e3    7000   Kaleem
+3  e4    9900   Hafeez
+4  e5    3900    Ibrar
+5  e6    5600    Qasim
+6  e7    2549    Jabar
+7  e8    7600    Qadir
+8  e9    3980     Saad 
+
+   EID  Age
+0  e1   18
+1  e2   20
+2  e3   29
+3  e4   50
+4  e5   43
+5  e6   39
+6  e7   68
+7  e8   23
+8  e9   76
+
+# Merge data ( merge data from different data sets )
+print(pd.merge(d1,d2) )
+# Output->
+  EID  Salary     Name  Age
+0  e1    9000   Sheikh   18
+1  e2    8000   Saleem   20
+2  e3    7000   Kaleem   29
+3  e4    9900   Hafeez   50
+4  e5    3900    Ibrar   43
+5  e6    5600    Qasim   39
+6  e7    2549    Jabar   68
+7  e8    7600    Qadir   23
+8  e9    3980     Saad   76
+
