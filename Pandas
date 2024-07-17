@@ -1,3 +1,4 @@
+
 # this repo includes all the code related to Pandas library in Python
 
 import numpy as np
@@ -12,7 +13,7 @@ dict1 = {
 # DataFrame() function will convert simple data to datasheet
 # DataFrame must be in camel format
 a = pd.DataFrame(dict1)
-a
+print ( a )
 # Output->   
 	Name	 Age	  City	       Marks
 0	Talha	 20	 Mansehra	99
@@ -36,7 +37,6 @@ a.to_csv('friends_index_false.csv' , index = False)
 # first column (serial No ) will be accessed by index = True
 
 # we can access values of any column by column name and can access row by index number
-
 
 # wanna see starting two rows then  .head()  function is used
 # Often used when data is too large like more than 100 rows and then we wanna see starting some rows
