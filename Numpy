@@ -1,6 +1,6 @@
 #                   NUMPY   ( Numerical Python )
+
 # This repo includes code related to Numpy library
-# Numpy is short form of Numerical Python
 
 import numpy as np
 
@@ -31,23 +31,23 @@ print(arr2)
 
 arr3 = np.array( [ 2,4,6,8,7,5,3,1 ] )
 print ( arr3[ 0: 4 ] ) 
-# Output-> [2 4 6 8]
+# Output->        [2 4 6 8]
 
 print( arr3 [ : 4 ] )
+# Output->       [2 4 6 8]
 print ( arr3 [ 0 : ] )
-# Output-> [2 4 6 8]
-           [2 4 6 8 7 5 3 1]
+# Output->       [2 4 6 8 7 5 3 1]
 
 print ( arr3 [ -1 : ] )
-# Output-> [1]
+# Output->       [1]
 
 print ( arr3 [ -4 : -1 ])
-# Output-> [7 5 3]
+# Output->       [7 5 3]
 
 print ( arr3 [-4 : ] )
+# Output->       [7 5 3 1]
 print ( arr3 [ : -1 ] )
-# Output-> [7 5 3 1]
-           [2 4 6 8 7 5 3]
+# Output->       [2 4 6 8 7 5 3]
 
 # Slicing in Multi Dimensional array
 
@@ -65,10 +65,10 @@ print ( arr4 [ 0 ] )
 # Output->   [1 3 5 7 9]
 
 print ( arr4 [ 1, 1:3 ] )
-# Output-> [2 4]
+# Output->    [2 4]
 
 print (arr4 [ 1,1 ] )
-2
+# Output->    2
 
 # for checking No of elements in an array
 arr5 = np.array( [2,3,4] )
