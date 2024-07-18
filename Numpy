@@ -204,9 +204,9 @@ print(np.vstack ( [arr7, arr8 ]))
 # np.array_split ( array_name, No of parts in which array will be splited )
 arr_2 = np.array( [ 1,2,3,4,5,6,7,8,9 ] )
 print ( np.array_split ( arr_2, 3) )
+# Output->       [array([1, 2, 3]), array([4, 5, 6]), array([7, 8, 9])]
 arr_3 = np.array_split(arr_2 , 1 )
 print ( arr_3)
-# Output->       [array([1, 2, 3]), array([4, 5, 6]), array([7, 8, 9])]
 # Output->       [array([1, 2, 3, 4, 5, 6, 7, 8, 9])]
 
 
@@ -252,7 +252,7 @@ print(b)
 # np.searchsorted() function, for this array must be sorted first
 arr_6 = np.array ( [ 1,2,3,4,5 ] )
 print(np.searchsorted (arr_6, 2) )
-# Output->        1
+# Output ->        1
 
 # Filter
 
