@@ -523,11 +523,11 @@ print( pd.concat ( [d5,d4] ) )
 
 print( d4 )
 # Output-> 
-  EID  Age
-0  e6   18
-1  e7   20
-2  e8   29
-3  e9   50
+#      EID  Age
+#    0  e6   18
+#    1  e7   20
+#    2  e8   29
+#    3  e9   50
 
 # Copy data in new dataset from existing dataset
 d6 = d4.copy()
