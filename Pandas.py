@@ -535,11 +535,11 @@ d6.loc[0, "EID"] =  "e9"
 d6.loc[0,"Age" ] = 29
 print ( d6 )
 # Output-> 
-  EID  Age
-0  e9   29
-1  e7   20
-2  e8   29
-3  e9   50
+#      EID  Age
+#    0  e9   29
+#    1  e7   20
+#    2  e8   29
+#    3  e9   50
 
  Compare data of two datasets
 data5 = { 
