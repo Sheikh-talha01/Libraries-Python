@@ -324,14 +324,14 @@ print ( f.groupby([ "Gender", "Country"]).agg( {"Full Name": "count"}) )
 # Single Parameter
 print ( f.groupby([ "Gender", "Country"]).agg( {"age": "mean"}) )
 # Output->
-            age
-Gender  Country               
-female  Afghanistan  20.333333
-        Bangladesh   36.000000
-male    India        33.500000
-        Netherland   65.000000
-        Pakistan     33.333333
-        Srilanka     43.000000
+#                    age
+#        Gender  Country               
+#        female  Afghanistan  20.333333
+#                Bangladesh   36.000000
+#        male    India        33.500000
+#                Netherland   65.000000
+#                Pakistan     33.333333
+#                Srilanka     43.000000
 
 # Single Parameter
 print ( f.groupby([ "Gender", "Country"]).agg( {"age": "max"}) )
