@@ -451,13 +451,13 @@ print( pd.merge( d1,d3) )
 print( pd.merge ( d1,d3 , on = "EID" , how = "inner" ) )
 # Both have same meaning/ same output
 # Output->
-  EID  Salary    Name  Age
-0  e3    7000  Kaleem   29
-1  e4    9900  Hafeez   50
-2  e5    3900   Ibrar   43
-3  e6    5600   Qasim   39
-4  e8    7600   Qadir   23
-5  e9    3980    Saad   76
+#        EID  Salary    Name  Age
+#      0  e3    7000  Kaleem   29
+#      1  e4    9900  Hafeez   50
+#      2  e5    3900   Ibrar   43
+#      3  e6    5600   Qasim   39
+#      4  e8    7600   Qadir   23
+#      5  e9    3980    Saad   76
 
 # To get all the values of first dataset and get nan value on that index on which there is no value in second dataset
 print( pd.merge ( d1,d3 , on = "EID" , how = "left" ) )
