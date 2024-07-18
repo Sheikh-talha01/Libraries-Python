@@ -462,42 +462,42 @@ print( pd.merge ( d1,d3 , on = "EID" , how = "inner" ) )
 # To get all the values of first dataset and get nan value on that index on which there is no value in second dataset
 print( pd.merge ( d1,d3 , on = "EID" , how = "left" ) )
 # Output->
-  EID  Salary     Name   Age
-0  e1    9000   Sheikh   NaN
-1  e2    8000   Saleem   NaN
-2  e3    7000   Kaleem  29.0
-3  e4    9900   Hafeez  50.0
-4  e5    3900    Ibrar  43.0
-5  e6    5600    Qasim  39.0
-6  e7    2549    Jabar   NaN
-7  e8    7600    Qadir  23.0
-8  e9    3980     Saad  76.0
+#        EID  Salary     Name   Age
+#      0  e1    9000   Sheikh   NaN
+#      1  e2    8000   Saleem   NaN
+#      2  e3    7000   Kaleem  29.0
+#      3  e4    9900   Hafeez  50.0
+#      4  e5    3900    Ibrar  43.0
+#      5  e6    5600    Qasim  39.0
+#      6  e7    2549    Jabar   NaN
+#      7  e8    7600    Qadir  23.0
+#      8  e9    3980     Saad  76.0
 
 print( pd.merge ( d1,d3 , on = "EID" , how = "right" ) )
 # Or
 print( pd.merge ( left = d1, right = d3 , on = "EID" , how = "right" ) )
 # To get all the values of second dataset and get nan value on that index on which there is no value in first dataset
 # Output->
-   EID  Salary    Name  Age
-0  e11     NaN     NaN   18
-1  e22     NaN     NaN   20
-2   e3  7000.0  Kaleem   29
-3   e4  9900.0  Hafeez   50
-4   e5  3900.0   Ibrar   43
-5   e6  5600.0   Qasim   39
-6  e77     NaN     NaN   68
-7   e8  7600.0   Qadir   23
-8   e9  3980.0    Saad   76
-   EID  Salary    Name  Age
-0  e11     NaN     NaN   18
-1  e22     NaN     NaN   20
-2   e3  7000.0  Kaleem   29
-3   e4  9900.0  Hafeez   50
-4   e5  3900.0   Ibrar   43
-5   e6  5600.0   Qasim   39
-6  e77     NaN     NaN   68
-7   e8  7600.0   Qadir   23
-8   e9  3980.0    Saad   76
+#         EID  Salary    Name  Age
+#      0  e11     NaN     NaN   18
+#      1  e22     NaN     NaN   20
+#      2   e3  7000.0  Kaleem   29
+#      3   e4  9900.0  Hafeez   50
+#      4   e5  3900.0   Ibrar   43
+#      5   e6  5600.0   Qasim   39
+#      6  e77     NaN     NaN   68
+#      7   e8  7600.0   Qadir   23
+#      8   e9  3980.0    Saad   76
+#         EID  Salary    Name  Age
+#      0  e11     NaN     NaN   18
+#      1  e22     NaN     NaN   20
+#      2   e3  7000.0  Kaleem   29
+#      3   e4  9900.0  Hafeez   50
+#      4   e5  3900.0   Ibrar   43
+#      5   e6  5600.0   Qasim   39
+#      6  e77     NaN     NaN   68
+#      7   e8  7600.0   Qadir   23
+#      8   e9  3980.0    Saad   76
 
 # Concatenate two datasets
 data5 = { 
