@@ -348,14 +348,14 @@ print ( f.groupby([ "Gender", "Country"]).agg( {"age": "max"}) )
 # Double Parameter
 print ( f.groupby([ "Gender", "Country"]).agg( {"age": "max", "marks" : "max"}) )
 # Output->
-          age  marks
-Gender  Country                
-female  Afghanistan   31     82
-        Bangladesh    59     92
-male    India         34     98
-        Netherland    65     87
-        Pakistan      45     99
-        Srilanka      43     78
+#                  age  marks
+#        Gender  Country                
+#        female  Afghanistan   31     82
+#                Bangladesh    59     92
+#        male    India         34     98
+#                Netherland    65     87
+#                Pakistan      45     99
+#                Srilanka      43     78
 
 
 data1 = { 
@@ -369,27 +369,27 @@ d1 = pd.DataFrame(data1)
 d2 = pd.DataFrame(data2)
 print( d1, "\n\n", d2 )
 # Output->
-  EID  Salary     Name
-0  e1    9000   Sheikh
-1  e2    8000   Saleem
-2  e3    7000   Kaleem
-3  e4    9900   Hafeez
-4  e5    3900    Ibrar
-5  e6    5600    Qasim
-6  e7    2549    Jabar
-7  e8    7600    Qadir
-8  e9    3980     Saad 
+#         EID  Salary     Name
+#       0  e1    9000   Sheikh
+#       1  e2    8000   Saleem
+#       2  e3    7000   Kaleem
+#       3  e4    9900   Hafeez
+#       4  e5    3900    Ibrar
+#       5  e6    5600    Qasim
+#       6  e7    2549    Jabar
+#       7  e8    7600    Qadir
+#       8  e9    3980     Saad 
 
-   EID  Age
-0  e1   18
-1  e2   20
-2  e3   29
-3  e4   50
-4  e5   43
-5  e6   39
-6  e7   68
-7  e8   23
-8  e9   76
+#          EID  Age
+#       0  e1   18
+#       1  e2   20
+#       2  e3   29
+#       3  e4   50
+#       4  e5   43
+#       5  e6   39
+#       6  e7   68
+#       7  e8   23
+#       8  e9   76
 
 # Merge data ( merge data from different data sets )
 print(pd.merge(d1,d2) )
