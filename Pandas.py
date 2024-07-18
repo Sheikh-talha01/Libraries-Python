@@ -139,17 +139,17 @@ print(b)
 # To get info about data
 print(d.info() )
 # Output-> 
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 9 entries, 0 to 8
-Data columns (total 3 columns):
- #   Column      Non-Null Count  Dtype  
+#     <class 'pandas.core.frame.DataFrame'>
+#     RangeIndex: 9 entries, 0 to 8
+#    Data columns (total 3 columns):
+#   Column      Non-Null Count  Dtype  
 ---  ------      --------------  -----  
- 0   age         7 non-null      float64
- 1   marks       7 non-null      float64
- 2   Unnamed: 2  0 non-null      float64
-dtypes: float64(3)
-memory usage: 348.0 bytes
-None
+#     0   age         7 non-null      float64
+#     1   marks       7 non-null      float64
+#     2   Unnamed: 2  0 non-null      float64
+#     dtypes: float64(3)
+#     memory usage: 348.0 bytes
+#     None
 
 # For statistical analysis of data a.describe() function will be used
 # For getting general info about data a.info() function will be used
@@ -157,10 +157,10 @@ None
 # To check null values in every column
 print( d.isnull().sum() )
 # Output-> 
-age           2
-marks         2
-Unnamed: 2    9
-dtype: int64
+#      age           2
+#      marks         2
+#      Unnamed: 2    9
+#      dtype: int64
 
 # To check duplicate values
 print( d["age"].duplicated().sum() )
@@ -169,19 +169,19 @@ print( d["age"].duplicated().sum() )
 # Duplicate function will use when we are dealing with duplicate values and wanna find it then we will find it from a unique column/serial No/ RollNo
 print( d.duplicated().sum() )
 # Output->    
-1
+#     1
 
 # For drop duplicate values drop_duplicates("column_name") function will be used
 print(d.drop_duplicates( "age" ) )
 # Output->
-  age  marks
-0   23     99
-1   32     88
-2   34     89
-3   33     98
-4   43     78
-5   45      8
-6   65     87
+#          age  marks
+#        0   23     99
+#        1   32     88
+#        2   34     89
+#        3   33     98
+#        4   43     78
+#        5   45      8
+#        6   65     87
 
 # When working with large data then .dropna() function will be used But we have to know that 
 # in every scenario we are not supposed to use this function e.g in a company while dealing with 
@@ -189,15 +189,15 @@ print(d.drop_duplicates( "age" ) )
 # count the total employee then there will be ambiguity in results.
 print( d.dropna())
 # Output-> 
-   age  marks
-0   23     99
-1   32     88
-2   34     89
-3   33     98
-4   43     78
-5   45      8
-6   65     87
-7   43      2
+#         age  marks
+#      0   23     99
+#      1   32     88
+#      2   34     89
+#      3   33     98
+#      4   43     78
+#      5   45      8
+#      6   65     87
+#      7   43      2
 
 # Replacing nan(not a number) values 
 import numpy as np
@@ -227,50 +227,50 @@ d.loc[ ( d  ["age %" ] > 0), "new_age"  ]= 19
 f = pd.read_excel ('sheikh.xlsx' )
 print ( f )
 # Output->    
-  First Name Last Name  age  marks
-0      Talha    Sheikh   23     99
-1      Azeem      Azam   32     88
-2     Saleem    Shokat   34     89
-3     Kaleem    Faheem   33     98
-4    Shakeel      Niaz   43     78
-5       Faiz      Umar   45      8
-6       Riaz     Usman   65     87
+#         First Name Last Name  age  marks
+#       0      Talha    Sheikh   23     99
+#       1      Azeem      Azam   32     88
+#       2     Saleem    Shokat   34     89
+#       3     Kaleem    Faheem   33     98
+#       4    Shakeel      Niaz   43     78
+#       5       Faiz      Umar   45      8
+#       6       Riaz     Usman   65     87
 
 # Combining two columns
 f["Full Name"] = f["First Name"] +" " + f[ "Last Name" ]
 print ( f )
 # Output->  
-     First Name   Last Name  age   marks      Full Name
-0      Talha       Sheikh     23     99     Talha Sheikh
-1      Azeem       Azam       32     88     Azeem Azam
-2      Saleem      Shokat     34     89     Saleem Shokat
-3      Kaleem      Faheem     33     98     Kaleem Faheem
-4      Shakeel     Niaz       43     78     Shakeel Niaz
-5      Faiz        Umar       45      8     Faiz Umar
-6      Riaz        Usman      65     87     Riaz Usman
+#            First Name   Last Name  age   marks      Full Name
+#       0      Talha       Sheikh     23     99     Talha Sheikh
+#       1      Azeem       Azam       32     88     Azeem Azam
+#       2      Saleem      Shokat     34     89     Saleem Shokat
+#       3      Kaleem      Faheem     33     98     Kaleem Faheem
+#       4      Shakeel     Niaz       43     78     Shakeel Niaz
+#       5      Faiz        Umar       45      8     Fai#       z Umar
+#       6      Riaz        Usman      65     87     Riaz Usman
 
 f["Full Name"] = f["First Name"].str.capitalize() +" " + f[ "Last Name" ].str.capitalize()
 print ( f )
 # Output->
-    First Name    Last Name  age  marks      Full Name
-0      Talha      Sheikh     23     99     Talha Sheikh
-1      Azeem      Azam       32     88     Azeem Azam
-2      Saleem     Shokat     34     89     Saleem Shokat
-3      Kaleem     Faheem     33     98     Kaleem Faheem
-4      Shakeel    Niaz       43     78     Shakeel Niaz
-5      Faiz       Umar       45      8     Faiz Umar
-
+#           First Name    Last Name  age  marks      Full Name
+#       0      Talha      Sheikh     23     99     Talha Sheikh
+#       1      Azeem      Azam       32     88     Azeem Azam
+#       2      Saleem     Shokat     34     89     Saleem Shokat
+#       3      Kaleem     Faheem     33     98     Kaleem Faheem
+#       4      Shakeel    Niaz       43     78     Sh#       akeel Niaz
+#       5      Faiz       Umar       45      8     Faiz Umar
+      
 f["Percentage"] = f["marks"]/100
 print(f)
 # Output->
-  First Name Last Name  age  marks      Full Name  Percentage
-0      Talha    Sheikh   23     99   Talha Sheikh        0.99
-1      Azeem      Azam   32     88     Azeem Azam        0.88
-2     Saleem    Shokat   34     89  Saleem Shokat        0.89
-3     Kaleem    Faheem   33     98  Kaleem Faheem        0.98
-4    Shakeel      Niaz   43     78   Shakeel Niaz        0.78
-5       Faiz      Umar   45      8      Faiz Umar        0.08
-6       Riaz     Usman   65     87     Riaz Usman        0.87
+#         First Name Last Name  age  marks      Full Name  Percentage
+#       0      Talha    Sheikh   23     99   Talha Sheikh        0.99
+#       1      Azeem      Azam   32     88     Azeem Azam        0.88
+#       2     Saleem    Shokat   34     89  Saleem Shokat        0.89
+#       3     Kaleem    Faheem   33     98  Kaleem Faheem        0.98
+#       4    Shakeel      Niaz   43     78   Shakeel Niaz        0.78
+#       5       Faiz      Umar   45      8      Faiz Umar        0.08
+#       6       Riaz     Usman   65     87     Riaz Usman        0.87
 
 
 # Make a new column from existing one and also make a function to implement function on all the values once
