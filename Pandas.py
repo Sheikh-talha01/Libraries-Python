@@ -394,16 +394,16 @@ print( d1, "\n\n", d2 )
 # Merge data ( merge data from different data sets )
 print(pd.merge(d1,d2) )
 # Output->
-  EID  Salary     Name  Age
-0  e1    9000   Sheikh   18
-1  e2    8000   Saleem   20
-2  e3    7000   Kaleem   29
-3  e4    9900   Hafeez   50
-4  e5    3900    Ibrar   43
-5  e6    5600    Qasim   39
-6  e7    2549    Jabar   68
-7  e8    7600    Qadir   23
-8  e9    3980     Saad   76
+#         EID  Salary     Name  Age
+#       0  e1    9000   Sheikh   18
+#       1  e2    8000   Saleem   20
+#       2  e3    7000   Kaleem   29
+#       3  e4    9900   Hafeez   50
+#       4  e5    3900    Ibrar   43
+#       5  e6    5600    Qasim   39
+#       6  e7    2549    Jabar   68
+#       7  e8    7600    Qadir   23
+#       8  e9    3980     Saad   76
 
 # Merge data ( merge data from different data sets )
 print(pd.merge(d1,d2) )
