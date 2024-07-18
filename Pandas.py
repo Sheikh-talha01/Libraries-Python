@@ -412,27 +412,27 @@ print()
 print(pd.merge(d1,d2, on = "EID") )
 # We merge data in this mannaer only when there is no nan value or there are equal Number of values in both datasets
 # Output->
-  EID  Salary     Name  Age
-0  e1    9000   Sheikh   18
-1  e2    8000   Saleem   20
-2  e3    7000   Kaleem   29
-3  e4    9900   Hafeez   50
-4  e5    3900    Ibrar   43
-5  e6    5600    Qasim   39
-6  e7    2549    Jabar   68
-7  e8    7600    Qadir   23
-8  e9    3980     Saad   76
+#        EID  Salary     Name  Age
+#      0  e1    9000   Sheikh   18
+#      1  e2    8000   Saleem   20
+#      2  e3    7000   Kaleem   29
+#      3  e4    9900   Hafeez   50
+#      4  e5    3900    Ibrar   43
+#      5  e6    5600    Qasim   39
+#      6  e7    2549    Jabar   68
+#      7  e8    7600    Qadir   23
+#      8  e9    3980     Saad   76
 
-  EID  Salary     Name  Age
-0  e1    9000   Sheikh   18
-1  e2    8000   Saleem   20
-2  e3    7000   Kaleem   29
-3  e4    9900   Hafeez   50
-4  e5    3900    Ibrar   43
-5  e6    5600    Qasim   39
-6  e7    2549    Jabar   68
-7  e8    7600    Qadir   23
-8  e9    3980     Saad   76
+#        EID  Salary     Name  Age
+#      0  e1    9000   Sheikh   18
+#      1  e2    8000   Saleem   20
+#      2  e3    7000   Kaleem   29
+#      3  e4    9900   Hafeez   50
+#      4  e5    3900    Ibrar   43
+#      5  e6    5600    Qasim   39
+#      6  e7    2549    Jabar   68
+#      7  e8    7600    Qadir   23
+#      8  e9    3980     Saad   76
 
 data1 = { 
     "EID" : [ "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8" , "e9"],
