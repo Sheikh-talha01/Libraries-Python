@@ -86,7 +86,7 @@ print(len(arr5))
 
 arr6 = np.array ( [ [ 2,3,4] , [5,6,7] ] )
 print(len(arr6))
-# Output-> 2
+# Output->      2
 
 # To check type of array
 print( type(arr5))
@@ -99,8 +99,8 @@ print ( arr5.dtype)
 # To change datatype in array
 # But string datatype can not be converted into int or float 
 print( arr5.astype(float))
-print( arr5.astype(str))
 # Output->    [2.0 3.0 4.0]
+print( arr5.astype(str))
 # Output->    ['2' '3' '4']
 
 # To check No of columns and rows .shape() function will be used
@@ -113,8 +113,8 @@ print( arr6.shape)
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 6,7,8,9,5] )
 print( arr7 + arr8 )
-print( np.add(arr7, arr8 ) )
 # Output-> [ 7  9 11 13 10]
+print( np.add(arr7, arr8 ) )
 # Output-> [ 7  9 11 13 10]
 
 # Addition for multi dimensional array
@@ -123,24 +123,24 @@ print( np.add(arr7, arr8 ) )
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 6,7,8,9,5] )
 print( arr8 - arr7 )
-print ( np.subtract(arr8, arr7))
 # Output->       [5 5 5 5 0]
+print ( np.subtract(arr8, arr7))
 # Output->       [5 5 5 5 0]
 
 # Multiply
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 2,2,2,2,2] )
 print( arr8 * arr7 )
-print ( np.multiply(arr8, arr7))
 # Output->       [ 2  4  6  8 10]
+print ( np.multiply(arr8, arr7))
 # Output->       [ 2  4  6  8 10]
 
 # Divide
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 2,2,2,2,2] )
 print( arr8 / arr7 )
-print ( np.divide(arr8, arr7))
 # Output->     [2.         1.         0.66666667 0.5        0.4       ]
+print ( np.divide(arr8, arr7))
 # Output->     [2.         1.         0.66666667 0.5        0.4       ]
 
 # Power
