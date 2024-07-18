@@ -286,40 +286,40 @@ def extract(value):
 _h["Short_Months" ] = _h["Months"].map(extract)
 print(_h)
 # Output->
-      Months     Short_Months
-0     January       Jan
-1     Febuary       Feb
-2     March         Mar
-3     April         Apr
-4     May           May
-5     June          Jun
-6     July          Jul
-7     August        Aug
-8     Septembe      Sep
-9     October       Oct
-10    November      Nov
-11    December      Dec
+#             Months     Short_Months
+#       0     January       Jan
+#       1     Febuary       Feb
+#       2     March         Mar
+#       3     April         Apr
+#       4     May           May
+#       5     June          Jun
+#       6     July          Jul
+#       7     August        Aug
+#       8     Septembe      Sep
+#       9     October       Oct
+#       10    November      Nov
+#       11    December      Dec
 
 # To check summary of data .groupby("column_name").agg( {"coumn_name": "count"})  function will be used
 print ( f.groupby("Gender").agg( {"Full Name": "count"}) )
 # Output->
-         Full Name
-Gender           
-female          6
-male            7
+#                Full Name
+#       Gender           
+#       female          6
+#       male            7
 
 # To check summary of data .groupby("column_name").agg( {"coumn_name": "count"})  function will be used
 # Single Parameter
 print ( f.groupby([ "Gender", "Country"]).agg( {"Full Name": "count"}) )
 # Output->
-              Full Name
-Gender  Country               
-female  Afghanistan          3
-        Bangladesh           3
-male    India                2
-        Netherland           1
-        Pakistan             3
-        Srilanka             1
+#                      Full Name
+#        Gender  Country               
+#        female  Afghanistan          3
+#                Bangladesh           3
+#        male    India                2
+#                Netherland           1
+#                Pakistan             3
+#                Srilanka             1
 
 # Single Parameter
 print ( f.groupby([ "Gender", "Country"]).agg( {"age": "mean"}) )
