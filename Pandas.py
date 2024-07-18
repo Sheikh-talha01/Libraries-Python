@@ -553,18 +553,18 @@ d8 = pd.DataFrame(data8)
 print( d5, "\n", d8 )
 
 # Output-> 
-  EID  Age
-0  e1   23
-1  e2   52
-2  e3   26
-3  e4   70
-4  e5   10 
-   EID  Age
-0  e1   18
-1  e2   20
-2  e3   29
-3  e4   50
-4  e5   49
+#      EID  Age
+#    0  e1   23
+#    1  e2   52
+#    2  e3   26
+#    3  e4   70
+#    4  e5   10 
+#       EID  Age
+#    0  e1   18
+#    1  e2   20
+#    2  e3   29
+#    3  e4   50
+#    4  e5   49
 
 print ( d5.compare(d8 ) )  # By defalut axis = 1
 # Output-> 
