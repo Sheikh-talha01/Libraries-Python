@@ -510,16 +510,16 @@ d5 = pd.DataFrame(data5)
 d4 = pd.DataFrame(data4)
 print( pd.concat ( [d5,d4] ) )
 # Output-> 
-  EID  Age
-0  e1   23
-1  e2   52
-2  e3   26
-3  e4   70
-4  e5   10
-0  e6   18
-1  e7   20
-2  e8   29
-3  e9   50
+#       EID  Age
+#     0  e1   23
+#     1  e2   52
+#     2  e3   26
+#     3  e4   70
+#     4  e5   10
+#     0  e6   18
+#     1  e7   20
+#     2  e8   29
+#     3  e9   50
 
 print( d4 )
 # Output-> 
