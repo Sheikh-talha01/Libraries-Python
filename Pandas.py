@@ -15,12 +15,12 @@ dict1 = {
 a = pd.DataFrame(dict1)
 print ( a )
 # Output->   
-	Name	 Age	  City	       Marks
-0	Talha	 20	 Mansehra	99
-1	Sheikh	 21	 Karachi        88
-2	Ali      22	 Lahore	        45
-3	Fahad  	 19	 Qalandarabad   76
-4	Saleem	  7	 Abbottabad	67
+#        	Name	 Age	  City	       Marks
+#        0	Talha	 20	 Mansehra	99
+#        1	Sheikh	 21	 Karachi        88
+#        2	Ali      22	 Lahore	        45
+#        3	Fahad  	 19	 Qalandarabad   76
+#        4	Saleem	  7	 Abbottabad	67
 
 # csv  stands for comma separated values
 # csv files is sheet of comma sepated values 
@@ -42,23 +42,23 @@ a.to_csv('friends_index_false.csv' , index = False)
 # Often used when data is too large like more than 100 rows and then we wanna see starting some rows
 df.head(2)
 # Output-> 
-	Name	 Age	    City	     Marks
-0	Talha	 20	    Mansehra	     99
-1	Sheikh	 21	    Karachi	     88
+#         	Name	 Age	    City	     Marks
+#         0	Talha	 20	    Mansehra	     99
+#         1	Sheikh	 21	    Karachi	     88
 
 a.head(3)
 # Output-> 
-        Name	 Age 	    City	 Marks
-0	Talha	 20	    Mansehra	 99
-1	Sheikh	 21	    Karachi  	 88
-2	Ali	 22	    Lahore  	 45
+#                 Name	 Age 	    City	 Marks
+#         0	Talha	 20	    Mansehra	 99
+#         1	Sheikh	 21	    Karachi  	 88
+#         2	Ali	 22	    Lahore  	 45
 
 # Wanna see ending rows of given dataset then .tail()  function is used
 df.tail(2)
 # Output-> 
-	Name	Age	City	        Marks
-3	Fahad	19	Qalandarabad	76
-4	Saleem	7	Abbottabad	67
+#         	Name	Age	City	        Marks
+#         3	Fahad	19	Qalandarabad	76
+#         4	Saleem	7	Abbottabad	67
 
 # By default pd.tail() and pd.head() function takes 5 as an argument
 
@@ -76,30 +76,30 @@ print(c)
 # for statistical analysis of columns having numerical values then .describe()  function is used
 b.describe()
 # Output-> 
-	Age	        Marks
-count	5.000000	5.000000
-mean	17.800000	75.000000
-std	6.140033	20.676073
-min	7.000000	45.000000
-25%	19.000000	67.000000
-50%	20.000000	76.000000
-75%	21.000000	88.000000
-max	22.000000	99.000000
+#           	Age	        Marks
+#           count	5.000000	5.000000
+#           mean	17.800000	75.000000
+#           std	6.140033	20.676073
+#           min	7.000000	45.000000
+#           25%	19.000000	67.000000
+#           50%	20.000000	76.000000
+#           75%	21.000000	88.000000
+#           max	22.000000	99.000000
 
 
 # # to access specific column e.g marks
 b['marks']
 # Output-> 
-0    99.0
-1    88.0
-2    89.0
-3    98.0
-4    78.0
-5     8.0
-6    87.0
-7     NaN
-8     NaN
-Name: marks, dtype: float64
+#        0    99.0
+#        1    88.0
+#        2    89.0
+#        3    98.0
+#        4    78.0
+#        5     8.0
+#        6    87.0
+#        7     NaN
+#        8     NaN
+#    Name: marks, dtype: float64
 
 # To access specific value from specific column
 b['marks'][0]
@@ -110,31 +110,31 @@ np.float64(99.0)
 b['marks'][0] = 3
 print(b)
 # Output->
-	age	marks	Unnamed: 2
-0	23.0	3.0	NaN
-1	32.0	88.0	NaN
-2	34.0	89.0	NaN
-3	33.0	98.0	NaN
-4	43.0	78.0	NaN
-5	45.0	8.0	NaN
-6	65.0	87.0	NaN
-7	NaN	NaN	NaN
-8	NaN	NaN	NaN
+#      	age	marks	Unnamed: 2
+#      0	23.0	3.0	NaN
+#      1	32.0	88.0	NaN
+#      2	34.0	89.0	NaN
+#      3	33.0	98.0	NaN
+#      4	43.0	78.0	NaN
+#      5	45.0	8.0	NaN
+#      6	65.0	87.0	NaN
+#      7	NaN	NaN	NaN
+#      8	NaN	NaN	NaN
 
 # To change index No 
 b.index = ["first", "second", "third", "forth", "fifth", "sixth", "seventh", "eight", "ningth"]
 print(b)
 # Output->
-	age	marks	Unnamed: 2
-first	23.0	3.0	NaN
-second	32.0	88.0	NaN
-third	34.0	89.0	NaN
-forth	33.0	98.0	NaN
-fifth	43.0	78.0	NaN
-sixth	45.0	8.0	NaN
-seventh	65.0	87.0	NaN
-eight	NaN	NaN	NaN
-ningth	NaN	NaN	NaN
+#     	age	marks	Unnamed: 2
+#      first	23.0	3.0	NaN
+#      second	32.0	88.0	NaN
+#      third	34.0	89.0	NaN
+#      forth	33.0	98.0	NaN
+#      fifth	43.0	78.0	NaN
+#      sixth	45.0	8.0	NaN
+#      seventh	65.0	87.0	NaN
+#      eight	NaN	NaN	NaN#      
+#      ningth	NaN	N#      aN	NaN
 
 # To get info about data
 print(d.info() )
