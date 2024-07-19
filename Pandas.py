@@ -40,7 +40,7 @@ a.to_csv('friends_index_false.csv' , index = False)
 
 # wanna see starting two rows then  .head()  function is used
 # Often used when data is too large like more than 100 rows and then we wanna see starting some rows
-df.head(2)
+a.head(2)
 # Output-> 
 #         	Name	 Age	    City	     Marks
 #         0	Talha	 20	    Mansehra	     99
@@ -54,7 +54,7 @@ a.head(3)
 #         2	Ali	 22	    Lahore  	 45
 
 # Wanna see ending rows of given dataset then .tail()  function is used
-df.tail(2)
+a.tail(2)
 # Output-> 
 #         	Name	Age	City	        Marks
 #         3	Fahad	19	Qalandarabad	76
