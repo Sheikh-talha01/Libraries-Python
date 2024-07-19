@@ -579,17 +579,17 @@ print ( d5.compare(d8 ) )  # By defalut axis = 1
 print ( d5.compare(d8 ,align_axis = 0 )) 
 # When axis = 0, it will return initial value and final value both
 # Output-> 
-         Age
-0 self    23
-  other   18
-1 self    52
-  other   20
-2 self    26
-  other   29
-3 self    70
-  other   50
-4 self    10
-  other   49
+#          Age
+# 0 self    23
+#   other   18
+# 1 self    52
+#   other   20
+# 2 self    26
+#   other   29
+# 3 self    70
+#   other   50
+# 4 self    10
+#   other   49
 
 print ( d5.compare(d8) ) # the row having same value in both dataset will not be shown
 # Output->
