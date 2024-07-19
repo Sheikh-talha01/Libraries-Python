@@ -604,10 +604,10 @@ print ( d5.compare(d8) ) # the row having same value in both dataset will not be
 print ( d5.compare(d8, keep_shape = True) ) 
 # keep_shape = True will give nan value at a position where values are same in both datasets
 # Output->
-#   EID         Age      
-#  self other  self other
-#0  NaN   NaN  23.0  18.0
-1  NaN   NaN  52.0  20.0
+#     EID          Age      
+#    self  other  self  other
+# 0  NaN   NaN    23.0  18.0
+# 1  NaN   NaN    52.0  20.0
 2  NaN   NaN   NaN   NaN
 3  NaN   NaN  70.0  50.0
 4  NaN   NaN  10.0  49.0
