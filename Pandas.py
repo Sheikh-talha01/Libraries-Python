@@ -568,13 +568,13 @@ print( d5, "\n", d8 )
 
 print ( d5.compare(d8 ) )  # By defalut axis = 1
 # Output-> 
-   Age      
-  self other
-0   23    18
-1   52    20
-2   26    29
-3   70    50
-4   10    49
+#    Age      
+#   self other
+# 0   23    18
+# 1   52    20
+# 2   26    29
+# 3   70    50
+# 4   10    49
 
 print ( d5.compare(d8 ,align_axis = 0 )) 
 # When axis = 0, it will return initial value and final value both
