@@ -143,7 +143,7 @@ print(d.info() )
 #     RangeIndex: 9 entries, 0 to 8
 #    Data columns (total 3 columns):
 #   Column      Non-Null Count  Dtype  
----  ------      --------------  -----  
+# ---  ------      --------------  -----  
 #     0   age         7 non-null      float64
 #     1   marks       7 non-null      float64
 #     2   Unnamed: 2  0 non-null      float64
@@ -541,7 +541,7 @@ print ( d6 )
 #    2  e8   29
 #    3  e9   50
 
- Compare data of two datasets
+#  Compare data of two datasets
 data5 = { 
     "EID" : [ "e1", "e2", "e3", "e4", "e5"],
     "Age" : [23,52,26,70,10]}
