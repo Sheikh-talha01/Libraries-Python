@@ -593,12 +593,12 @@ print ( d5.compare(d8 ,align_axis = 0 ))
 
 print ( d5.compare(d8) ) # the row having same value in both dataset will not be shown
 # Output->
-    Age      
-   self other
-0  23.0  18.0
-1  52.0  20.0
-3  70.0  50.0
-4  10.0  49.0
+#     Age      
+#    self other
+# 0  23.0  18.0
+# 1  52.0  20.0
+# 3  70.0  50.0
+# 4  10.0  49.0
 
 
 print ( d5.compare(d8, keep_shape = True) ) 
