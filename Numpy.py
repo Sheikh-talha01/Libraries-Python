@@ -141,7 +141,8 @@ arr8 = np.array ( [ 2,2,2,2,2] )
 print( arr8 / arr7 )
 # Output->     [2.         1.         0.66666667 0.5        0.4       ]
 print ( np.divide(arr8, arr7))
-# Output->     [2.         1.         0.66666667 0.5        0.4       ]
+# Output->     
+#         [2.         1.         0.66666667 0.5        0.4       ]
 
 # Power
 arr9 = np.array([2])
