@@ -168,7 +168,8 @@ print( first +  second)
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 2,2,2,2,2] )
 print( np.concatenate( [arr7, arr8] ))
-# Output->     [1 2 3 4 5 2 2 2 2 2]
+# Output->     
+#            [1 2 3 4 5 2 2 2 2 2]
 
 # Concatenation in two dimension using numpy library
 
