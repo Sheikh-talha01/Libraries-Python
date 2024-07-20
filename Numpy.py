@@ -189,7 +189,7 @@ print( np.concatenate( [arr7, arr8], axis = 0 ))
 # Output->      [[1 2 9]
 #               [3 4 5]
 #               [2 3 4]
-                [1 0 2]]
+#               [1 0 2]]
 
 # Vertical Concatenation using vstack
 print(np.vstack ( [arr7, arr8 ]))
