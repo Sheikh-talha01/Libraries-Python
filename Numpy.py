@@ -160,7 +160,8 @@ print( np.sqrt( arr7 ) )
 first = [ 2 , 3, 4, 5]
 second = [ 6, 7, 8, 9]
 print( first +  second)
-# Output->     [2, 3, 4, 5, 6, 7, 8, 9]
+# Output->     
+#           [2, 3, 4, 5, 6, 7, 8, 9]
 
 # Concatenation  using numpy library
 
