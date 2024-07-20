@@ -251,8 +251,9 @@ print( np.sort( arr_5 ))
 # Output->       [1 2 3 8 9] 
 arr_6 = np.array ( [ [ 2,1,8,4,0], [ 7,2,5,3,9 ] ] )
 print( np.sort( arr_6 ) )
-# Output->       [[0 1 2 4 8]
-                 [2 3 5 7 9]]
+# Output->      
+#                [[0 1 2 4 8]
+#                [2 3 5 7 9]]
 
 # Search
 arr_5 = np.array( [ 9,3,8,2,1 ] )
