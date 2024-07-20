@@ -113,9 +113,11 @@ print( arr6.shape)
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 6,7,8,9,5] )
 print( arr7 + arr8 )
-# Output-> [ 7  9 11 13 10]
+# Output-> 
+#               [ 7  9 11 13 10]
 print( np.add(arr7, arr8 ) )
-# Output-> [ 7  9 11 13 10]
+# Output-> 
+#               [ 7  9 11 13 10]
 
 # Addition for multi dimensional array
 
@@ -123,7 +125,8 @@ print( np.add(arr7, arr8 ) )
 arr7 = np.array( [ 1,2,3,4,5] )
 arr8 = np.array ( [ 6,7,8,9,5] )
 print( arr8 - arr7 )
-# Output->       [5 5 5 5 0]
+# Output->       
+#                [5 5 5 5 0]
 print ( np.subtract(arr8, arr7))
 # Output->       [5 5 5 5 0]
 
