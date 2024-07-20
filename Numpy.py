@@ -152,7 +152,8 @@ print( np.power( arr7, arr9 ) )
 # SQRT
 arr7 = np.array( [ 1,2,3,4,5] ) 
 print( np.sqrt( arr7 ) )
-# Output->     [1.         1.41421356 1.73205081 2.         2.23606798]
+# Output->    
+#         [1.         1.41421356 1.73205081 2.         2.23606798]
 
 # Combining and Spliting Arrays
 
