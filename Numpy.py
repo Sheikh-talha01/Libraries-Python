@@ -210,7 +210,7 @@ print(np.vstack ( [arr7, arr8 ]))
 # Output->       [[1 2 9]
 #                 [3 4 5]
 #                [2 3 4]
-                 [1 0 2]]
+#                [1 0 2]]
 
 
 # Spliting array
