@@ -18,8 +18,8 @@ print(type(arr))
 arr2 = np.array( [ [ 22,33,44,55 ] , [ 66, 77, 88, 99 ] , [ 32, 43, 54,65 ] ] )
 print(arr2)
 # Output-> [[22 33 44 55]
-           [66 77 88 99]
-           [32 43 54 65]]
+#           [66 77 88 99]
+#           [32 43 54 65]]
 
 # for multiple dimension array all the lists have same No of values( because in matrices every row have same No of columns )
 # in the main list otherwise will throw an error .We can extend the dimensions of array by adding comma and then by adding list 
