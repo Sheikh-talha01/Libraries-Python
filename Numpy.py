@@ -54,7 +54,7 @@ print ( arr3 [ : -1 ] )
 arr4 = np.array( [ [ 1,3,5,7,9] , [ 0,2,4,6,8 ] ] )
 print( arr4 [ 0:2 , 0:3 ] ) 
 # Output-> [[1 3 5]
-           [0 2 4]]
+#          [0 2 4]]
 
 # Wanna access a single element form multidimensional array
 
