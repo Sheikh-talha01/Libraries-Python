@@ -147,7 +147,8 @@ print ( np.divide(arr8, arr7))
 arr9 = np.array([2])
 arr7 = np.array( [ 1,2,3,4,5] ) 
 print( np.power( arr7, arr9 ) )
-# Output->     [ 1  4  9 16 25]
+# Output->     
+#         [ 1  4  9 16 25]
 
 # SQRT
 arr7 = np.array( [ 1,2,3,4,5] ) 
