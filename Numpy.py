@@ -382,5 +382,5 @@ print ( np.corrcoef ( [ x , z ] ) )
 
 
 # Initial Placeholders in Array
-s = np.zeros( 2,3)
+s = np.zeros( (2,3) )
 print(s)
