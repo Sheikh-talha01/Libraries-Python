@@ -176,7 +176,8 @@ print( np.concatenate( [arr7, arr8] ))
 arr7 = np.array([ [ 1,2,9], [3,4,5] ] )
 arr8 = np.array ( [ [ 2,3,4], [1,0,2] ] )
 print( np.concatenate( [arr7, arr8], axis = 1 ))
-# Output->     [[1 2 9 2 3 4]
+# Output->     
+#              [[1 2 9 2 3 4]
 #              [3 4 5 1 0 2]]
 
 # Horizontal Concatenation using hstack
