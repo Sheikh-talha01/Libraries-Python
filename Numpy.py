@@ -2,6 +2,8 @@
 
 # This repo includes code related to Numpy library
 
+# Numpy arrays are very faster than list and tuples
+
 import numpy as np
 
 # np.array() this function will create an array(space separated) of list( comma separated
