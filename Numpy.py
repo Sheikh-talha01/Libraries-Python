@@ -327,7 +327,7 @@ print () # for adding single line
 d_ =  np.cumprod ( [ b, c_ ] , axis =0 ) # axis is provided bcz we have two columns/values
 print( d_ )
 # Output->        [20 30 40 50] 
-                  [2 3 4 5]
+#                  [2 3 4 5]
 
                   [[ 20  30  40  50]
                   [ 40  90 160 250]]
