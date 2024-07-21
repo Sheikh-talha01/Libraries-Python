@@ -397,3 +397,5 @@ s = np.zeros( (2,3) )
 print(s)
 s_ = np.ones( (2,3) ) 
 print(s_)
+
+print(type(s_))
