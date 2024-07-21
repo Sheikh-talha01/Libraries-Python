@@ -318,7 +318,8 @@ print( np.mean (b) )
 b = np.array( [ 20,30, 40, 50 ] )
 c_ = np.array( [ 2,3,4,5] )
 print( b , "\n", c_ ) # adding new line
-# Output->        [20 30 40 50] 
+# Output->        
+#                 [20 30 40 50] 
 #                 [2 3 4 5]
 
 print( b , "\n", c_ )
