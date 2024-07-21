@@ -365,7 +365,8 @@ print ( np.std (_c ) )
 # Variance
 print( np.var ( _c ) )
 
-# Output->       171.36
+# Output->       
+#        171.36
 
 # To verify var and std function 
 print ( 13.09**2 )
