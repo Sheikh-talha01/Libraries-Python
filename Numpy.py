@@ -353,15 +353,18 @@ print( np.median ( _b ) )  # first sort the given data and then average of middl
 import statistics as stats
 _c = np.array( [ 25,37, 59, 44, 59 ] )
 print ( stats.mode ( _c ) )
-# Output->        59
+# Output->        
+# 59
 
 # Standard Diviation
 _c = np.array( [ 25,37, 59, 44, 59 ] )
 print ( np.std (_c ) )
-# Output->       13.090454537562858
+# Output->      
+# 13.090454537562858
 
 # Variance
-print( np.var ( _c ) )171.36z
+print( np.var ( _c ) )
+
 # Output->       171.36
 
 # To verify var and std function 
