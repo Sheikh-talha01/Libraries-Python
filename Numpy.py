@@ -354,7 +354,7 @@ import statistics as stats
 _c = np.array( [ 25,37, 59, 44, 59 ] )
 print ( stats.mode ( _c ) )
 # Output->        
-# 59
+#          59
 
 # Standard Diviation
 _c = np.array( [ 25,37, 59, 44, 59 ] )
