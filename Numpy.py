@@ -370,7 +370,8 @@ print( np.var ( _c ) )
 
 # To verify var and std function 
 print ( 13.09**2 )
-# Output->       171.3481
+# Output->      
+#           171.3481
 
 # Cofficient of Corelation
 # -1 represents inversely proportional relationship
