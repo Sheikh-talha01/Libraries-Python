@@ -399,3 +399,4 @@ s_ = np.ones( (2,3) )
 print(s_)
 
 print(type(s_))
+type(s_)
