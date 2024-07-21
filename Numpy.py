@@ -386,7 +386,8 @@ print()
 # Output->    
 
 print ( np.corrcoef ( [ x , z ] ) )
-# Output->       [[1.         0.98390407]
+# Output->      
+#                [[1.         0.98390407]
 #                [0.98390407 1.        ]]
 
 
