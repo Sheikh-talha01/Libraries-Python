@@ -405,3 +405,5 @@ print(s_)
 print(s)
 print(type(s))
 type(s)
+
+np.sin(s)
