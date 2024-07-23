@@ -408,3 +408,4 @@ type(s)
 
 np.sin(s)
 np.cos()
+np.abs(s)
