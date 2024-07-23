@@ -407,3 +407,4 @@ print(type(s))
 type(s)
 
 np.sin(s)
+np.cos()
