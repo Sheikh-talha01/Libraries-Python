@@ -409,5 +409,7 @@ type(s)
 np.sin(s)
 np.cos()
 np.abs(s)
-np.amin(s)
+np.min(s)
 type(s_)
+a = 30
+np.tan( a )
