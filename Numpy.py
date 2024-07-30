@@ -6,7 +6,8 @@
 
 import numpy as np
 
-# np.array() this function will create an array(space separated) of list( comma separated
+# np.array() this function will create an array(space separated) of list( comma separated ) 
+# Array will contain elements of same datatype
 
 arr = np.array([3,5,4,7,8])
 print(arr)
