@@ -3,4 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+plt.quiver( 0,0, 4,5 )
+
 plt.quiver( 0,0, 5,6, scale_units='xy', angles= 'xy', scale = 1, color = 'b')
+
