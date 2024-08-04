@@ -9,3 +9,10 @@ plt.quiver( 0,0, 4,5, scale_units='xy', angles='xy', scale=1 )
 plt.xlim(-5,5)
 plt.ylim(-5,5)
 plt.show()
+
+# Showing 2 vectors in same graph
+plt.quiver( 0,0, 5,6, scale_units='xy', angles= 'xy', scale = 1, color = 'b')
+plt.quiver( 0,0,-2,-4, scale_units='xy', angles= 'xy', scale = 1, color = 'r')
+plt.xlim(-8,8)
+plt.ylim(-8,8)
+plt.show()
