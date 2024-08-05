@@ -46,6 +46,13 @@ vec3 = np.asarray([0,0, 2,3])
 vec4 = np.asarray([0,0, 5,-2])
 vec_sub = vec2 - vec1
 print(vec_sub)
+lt.quiver(0,0, 2,3, scale_units = 'xy', angles = 'xy', scale = 1, color = 'r')
+plt.quiver(0,0, 5,-2, scale_units = 'xy', angles = 'xy', scale = 1, color = 'g')
+plt.quiver(0,0, 3,-5, scale_units = 'xy', angles = 'xy', scale = 1, color = 'b')
+plt.xlim(-9,9)
+plt.ylim(-9,9)
+plt.show()
+
 
 # Multiplication of Vectors
 
