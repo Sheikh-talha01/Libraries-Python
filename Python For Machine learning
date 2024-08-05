@@ -57,3 +57,7 @@ plt.show()
 # Multiplication of Vectors
 
 # Dot Product
+vec3 = np.asarray([2,3])
+vec4 = np.asarray([5,-2])
+result = np.cross(vec3, vec4)
+print( result)
