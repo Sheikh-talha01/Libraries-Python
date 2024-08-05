@@ -74,4 +74,13 @@ vec6 = np.asarray([6,-2])
 result_ = np.dot(vec3, vec4)
 print( result_)
 
+# Projection of 'a' vector on 'v' vector
+a = np.array([2,5])
+v = np.array([8,-6])
+
+# Magnitude of v
+magnitude_of_v = np.sqrt(sum(v**2) )
+# Projection of 'a' on 'v'
+ans = ( ( np.dot(a,v) ) / ( magnitude_of_v**2 ) ) * v
+print("Projection of 'a' on 'v' is ",ans )
 
