@@ -62,14 +62,16 @@ vec4 = np.asarray([5,-2])
 result = np.cross(vec3, vec4)
 print( result)
 
+# Cross Product of 3 values
+vec7 = np.asarray([2,4,3])
+vec8 = np.asarray([6,0,-2])
+_result = np.cross(vec7, vec8)
+print( _result)
+
 # Dot Product
 vec5 = np.asarray([4,3])
 vec6 = np.asarray([6,-2])
 result_ = np.dot(vec3, vec4)
 print( result_)
 
-# Cross Product of 3 values
-vec7 = np.asarray([2,4,3])
-vec8 = np.asarray([6,0,-2])
-_result = np.dot(vec7, vec8)
-print( _result)
+
