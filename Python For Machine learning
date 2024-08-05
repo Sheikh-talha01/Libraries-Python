@@ -48,3 +48,5 @@ vec_sub = vec2 - vec1
 print(vec_sub)
 
 # Multiplication of Vectors
+
+# Dot Product
