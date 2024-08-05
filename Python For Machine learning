@@ -41,9 +41,10 @@ plt.xlim(-8,8)
 plt.ylim(-8,8)
 plt.show()
 
-
 # Subtraction of vectors
 vec3 = np.asarray([0,0, 2,3])
 vec4 = np.asarray([0,0, 5,-2])
 vec_sub = vec2 - vec1
 print(vec_sub)
+
+# Multiplication of Vectors
