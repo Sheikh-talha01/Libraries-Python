@@ -102,3 +102,16 @@ print( metrix2 )
 # Creating Matrix with Random Values( Integers)
 metrix3 = np.random.randint(50, size = (2,3)) # first argument( 50) is for limit i-e we want numbers less than 50
 print( '\n',metrix3 )
+
+# Metrix with all the values equal to 1 ( having datatype float)
+metrix4 = np.ones((2,3) )
+print( metrix4 )
+
+# Metrix with all the values equal to 1 ( having datatype int)
+metrix4 = np.ones((2,3), dtype = int )
+print( metrix4 )
+
+# Null metrix or zero metrix
+metrix5 = np.zeros( (3,4) )
+print( metrix5)
+
