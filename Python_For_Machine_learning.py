@@ -147,16 +147,10 @@ print( metrix_4, '\n\n', metrix4_, '\n\n', metrix_sub_ )
 # Multiplication of two metrics
 
 # General Multiplication of metrics
+# Condition-> No of columns in first metrix should be equal to No of rows in the second metrix
 metrix_5 = np.random.randint( 4, size = (2,3))
 metrix5_ = np.random.randint(4, size = (3,2)) 
 metrics_multiply = np.dot(metrix_5,metrix5_)
 print(metrix_5, '\n\n',metrix5_, '\n\n', metrics_multiply)
 
-# Elementwise Multiplication 
-metrix6_ = np.random.randint( 4, size = (3,3))
-metrix_6 = np.random.randint(4, size = (3,3)) 
-elementwise_multiply = np.multiply(metrix6_,metrix_6)
-print(metrix6_, '\n\n',metrix_6, '\n\n', elementwise_multiply)
-
-# Condition-> No of columns in first metrix should be equal to No of rows in the second metrix
 
