@@ -144,7 +144,11 @@ metrix_sub_ = np.subtract( metrix_4, metrix4_)
 print( metrix_4, '\n\n', metrix4_, '\n\n', metrix_sub_ )
 
 
-
 # Multiplication of two metrics
+
+metrix_5 = np.random.randint( 4, size = (2,3))
+metrix5_ = np.random.randint(4, size = (3,2)) 
+metrics_multiply = np.dot(metrix_5,metrix5_)
+print(metrix_5, '\n\n',metrix5_, '\n\n', metrics_multiply)
 # Condition-> No of columns in first metrix should be equal to No of rows in the second metrix
 
