@@ -88,3 +88,9 @@ print("Projection of 'a' on 'v' is ",ans )
 # Scaler-> a single number
 # Vector-> Lists of numbers( only one row or only one column )
 # Metrix-> Multiple rows and columns ( More than one row and column )
+
+# Creating Matrix in Python
+metrix = np.array( [ [1,2,3] ,[4,5,6] ] )
+print( metrix )
+metrix1 = np.array( [ [1,2], [3,4]])
+print('\n', metrix1)
