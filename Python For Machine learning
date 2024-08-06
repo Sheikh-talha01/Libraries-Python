@@ -84,3 +84,7 @@ magnitude_of_v = np.sqrt(sum(v**2) )
 ans = ( ( np.dot(a,v) ) / ( magnitude_of_v**2 ) ) * v
 print("Projection of 'a' on 'v' is ",ans )
 
+# Scaler Vs Vector Vs Matrics
+# Scaler-> a single number
+# Vector-> Lists of numbers( only one row or only one column )
+# Metrix-> Multiple rows and columns ( More than one row and column )
