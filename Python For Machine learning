@@ -100,5 +100,5 @@ metrix2 = np.random.rand(2,3)
 print( metrix2 )
 
 # Creating Matrix with Random Values( Integers)
-metrix3 = np.random.randint(50, size = (2,3))
+metrix3 = np.random.randint(50, size = (2,3)) # first argument( 50) is for limit i-e we want numbers less than 50
 print( '\n',metrix3 )
