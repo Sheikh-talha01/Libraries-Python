@@ -120,4 +120,8 @@ metrix6 = np.eye(3,3)
 print( metrix6 )
 
 # Metrix Addition and subtraction
-Two metrices can be added/subtracted only if they have same shape i-e they have same number of rows and columns
+# Two metrices can be added/subtracted only if they have same shape i-e they have same number of rows and columns
+
+
+# Multiplication of two metrics
+# Condition-> No of columns in first metrix should be equal to No of rows in the second metrix
