@@ -127,6 +127,12 @@ print( metrix )
 metrix_ = np.array( [ [1,2,4], [3,5,4]])
 print('\n', metrix_)
 
+# Addition of Metrics ( random numbers)
+metrix3 = np.random.randint(50, size = (2,3)) 
+metrix_3 = np.random.randint( 50, size = (2,3))
+metrix_sum_ = np.add( metrix3, metrix_3)
+print( metrix3, '\n\n', metrix_3, '\n\n', metrix_sum_ )
+
 metrix_sum = metrix + metrix_
 print('\n', metrix_sum)
 # Two metrices can be added/subtracted only if they have same shape i-e they have same number of rows and columns
