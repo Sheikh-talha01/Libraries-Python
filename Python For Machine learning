@@ -94,3 +94,11 @@ metrix = np.array( [ [1,2,3] ,[4,5,6] ] )
 print( metrix )
 metrix1 = np.array( [ [1,2], [3,4]])
 print('\n', metrix1)
+
+# Creating Matrix with Random Values( floating Point Numbers)
+metrix2 = np.random.rand(2,3)
+print( metrix2 )
+
+# Creating Matrix with Random Values( Integers)
+metrix3 = np.random.randint(50, size = (2,3))
+print( '\n',metrix3 )
