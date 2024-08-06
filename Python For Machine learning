@@ -120,6 +120,7 @@ metrix6 = np.eye(3,3)
 print( metrix6 )
 
 # Metrix Addition and subtraction
+# Two metrices can be added/subtracted only if they have same shape i-e they have same number of rows and columns
 
 # Addition of Metrics
 metrix = np.array( [ [1,2,3] ,[4,5,6] ] )
@@ -135,8 +136,15 @@ print( metrix3, '\n\n', metrix_3, '\n\n', metrix_sum_ )
 
 metrix_sum = metrix + metrix_
 print('\n', metrix_sum)
-# Two metrices can be added/subtracted only if they have same shape i-e they have same number of rows and columns
+
+# Subtarction of Metrics ( random numbers)
+metrix_4 = np.random.randint(50, size = (2,3)) 
+metrix4_ = np.random.randint( 50, size = (2,3))
+metrix_sub_ = np.subtract( metrix_4, metrix4_)
+print( metrix_4, '\n\n', metrix4_, '\n\n', metrix_sub_ )
+
 
 
 # Multiplication of two metrics
 # Condition-> No of columns in first metrix should be equal to No of rows in the second metrix
+
