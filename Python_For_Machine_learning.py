@@ -154,6 +154,7 @@ metrics_multiply = np.dot(metrix_5,metrix5_)
 print(metrix_5, '\n\n',metrix5_, '\n\n', metrics_multiply)
 
 # Elementwise Multiplication 
+# Multiplication of elements of one matrix to corresponding elements of another matrix
 metrix6_ = np.random.randint( 4, size = (3,3))
 metrix_6 = np.random.randint(4, size = (3,3)) 
 elementwise_multiply = np.multiply(metrix6_,metrix_6)
